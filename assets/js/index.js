@@ -28,3 +28,36 @@
    console.log('Error:', error);
  });
 
+ document.addEventListener('DOMContentLoaded', () => {
+  const cardsContainer = document.getElementById('cards');
+  const searchInput = document.getElementById('searchInput');
+
+
+  // Agregar evento clic a todas las cards
+  cardsContainer.addEventListener('click', (event) => {
+    const card = event.target.closest('.card');
+    if (card) {
+      card.classList.toggle('expanded');
+    }
+  });
+
+  // Agregar evento doble clic a todas las cards
+  cardsContainer.addEventListener('dblclick', (event) => {
+    const card = event.target.closest('.card');
+    if (card) {
+      card.classList.remove('expanded');
+    }
+  });
+   
+});
+
+//Alert
+$(document).ready(function() {
+  $("#uso").click(function() {
+    $("#alertD").toggle();
+  });
+})
+
+$("#close-link").click(function() {
+  $("#alertD").hide();
+});

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <link rel="stylesheet" href="./assets/style/style.css">
-     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>>
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
      
     <title>Digimon</title>
   </head>
@@ -17,15 +17,31 @@
     <header>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid" >
-            <img src="./assets/style/img/Dlogo.png" alt="logo_digimon" width="150" height="auto" class="d-inline-block">
+            <img src="./assets/style/img/Dlogo.png" alt="logo_digimon" id="" width="150" height="auto" class="d-inline-block">
             <p id="logoText" class="d-none d-md-block"><strong>  Digimon </strong></p>
-          <form class="d-none d-sm-flex">
-            <input class="form-control me-2 bg-light" type="search"  placeholder="Nombre" aria-label="search">
-            <button class="btn btn-outline-warning" type="submit">Buscar</button>
-          </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html#alertD" id="uso">¿Como usarme?</a>
+                </li>
+
+              </ul>
         </div>
       </nav>
     </header>
+
+    <div class="alert alert-warning" role="alert" id="alertD">
+      <h3 class="alert-heading">¡Hola! y bienvenido al centro de información de Digimon</h4>
+      <p>Mi funcionamiento es realmente sencillo. 
+        Todos los digimons están ordenados por <strong>nombre y nivel.</strong> </p>
+        <p>Si quieres observar uno a mayor profundidad solo tienes que dar clic en el que más te interese</p>
+      <hr>
+      <p class="mb-0"><strong> ¡Pero cuidado! </strong>Antes de abrir otra carta de Digimon, debes cerrar las que tengas abiertas, de lo contrario se generara un caos, desapareciendo todas y no queremos eso ¿o sí?</p>
+      <a href="#" id="close-link" class="close-btn">x</a>
+    </div>
 
     <article>
         <div class="row row-cols-1 row-cols-md-3 g-4 border-dark text-center " id="cards">
