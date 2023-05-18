@@ -2,15 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+ 
+body {
+    background-color: #6c757d;
 }
 
+
+ /* Cards */
 #logoText {
-    font-family: fuenteDigimon;
-    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
     color: white;
+    
 }
 
-@font-face {
-    font-family: fuenteDigimon;
-    src: url("pixel.ttf");
-}
+ #cards {
+     margin: 3%;
+ }
+
+ .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  .card.selected {
+    background-color: yellow;
+  }
